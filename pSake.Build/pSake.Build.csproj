@@ -44,7 +44,14 @@
   <ItemGroup>
     <None Include="build.ps1" />
     <None Include="default.ps1" />
+    <None Include="helpers.ps1" />
+    <None Include="MSBuild\MSTestBuild.targets" />
+    <None Include="MSBuild\NUnitBuild.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MSBuild\xUnitBuild.targets" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
